@@ -352,7 +352,8 @@ document[destimage].src=srcimage
 
 function GoHome(){
 if (confirm("Are you sure you want to quit this game?")) {
-var destination = "http://www.vocabumonkey.org";
+//FIX -- This should close game
+var destination = "index.html";
 window.location.replace(destination);
 window.location.href=destination;
 }
@@ -360,7 +361,7 @@ window.location.href=destination;
 	
 function NewGame()
 {
-alert("Vocabumonkey 1.0 \n Copyright (C) 1998, 2000, 2001  John Schnittker. \n Vocabumonkey is free software. \n You can redistribute it and/or modify it \n under the terms of the GNU General Public License (GPL). \n For the latest version, \n please visit us at www.vocabumonkey.org ...");
+alert("Vocabumonkey Android Edition 1.0 \n Copyright (C) 2014 Pedro Cartagena \n Copyright (C) 1998, 2000, 2001  John Schnittker. \n Vocabumonkey is free software. \n You can redistribute it and/or modify it \n under the terms of the GNU General Public License (GPL). \n For the latest version, \n please visit us at www.vocabumonkey.org ...");
 rotate();
 }
 </script>
@@ -370,6 +371,7 @@ rotate();
 <center>
 <br>
 <a href="javascript: GoHome();">
+	<!-- FIX This needs to be removed or pointed else where -->
 	<img src="media/VocabBanner.jpg" width="468" height="60">
 </a>
 <br>
