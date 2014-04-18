@@ -88,11 +88,12 @@ count++
 if (count == vocabwords.length) {
 if (confirm("CONGRATULATIONS --- You have completed all words --- Play Again ?")) 
   {
-  	var destination = "VocabumonkeyGame.html?reload=true";
+  	var destination = "index.html?reload=true";
     window.location.replace(destination);
     window.location.href=destination;
   } else {
-    var destination = "http://www.vocabumonkey.org";
+ 	//FIX -- For now, go back to start, but this should close app
+    var destination = "index.html?reload=true";
     window.location.replace(destination);
     window.location.href=destination;
          }
