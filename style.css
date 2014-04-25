@@ -19,12 +19,54 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     Author     : cartagen
 */
 
+/* iOS/android phone landscape screen width*/
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+  .stage-left {
+    left: -480px;
+  }
+
+  .stage-right {
+    left: 480px;
+  }
+
+  .page {
+    width: 480px;
+  }
+  
+  .scene {
+    width: 480px;
+  }
+}
+
 body {
     bgcolor:"#555555";
     margin:2;
     padding:0;
 }
 
-.center {
-    
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*activate the GPU for compositing each page */
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.stage-left {
+  left: -480px;
+}
+
+.stage-right {
+  left: 480px;
+}
+
+.stage-center {
+  top: 0;
+  left: 0;
 }
